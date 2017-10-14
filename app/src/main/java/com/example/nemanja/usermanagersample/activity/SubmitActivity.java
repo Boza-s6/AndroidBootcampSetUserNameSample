@@ -69,10 +69,15 @@ public class SubmitActivity extends AppCompatActivity implements LoaderManager.L
     }
 
     private void setupCallbacks() {
-        mSubmit.setOnClickListener(this::changeName);
+        mSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeName();
+            }
+        });
     }
 
-    private void changeName(View view) {
+    private void changeName() {
         String name = mNewName.getText().toString();
         Log.d(TAG, "changeName: name = " + name);
         mNewName.setText("");
