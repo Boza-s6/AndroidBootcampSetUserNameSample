@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UserManagerSample</string>
+    <string name="current_name_label">Current name:</string>
+    <string name="new_name_label">New name:</string>
+    <string name="submit">Submit</string>
+    <string name="new_name_edit_text_hint">Marko</string>
+    <string name="new_name_error_empty">Name cannot be empty</string>
+</resources>
